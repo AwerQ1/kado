@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kado Ulang Tahun untuk Kamu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    <!-- Tombol Musik -->
+    <div class="music-control">
+        <button id="play-music">pencet🎵 </button>
+    </div>
+
+    <!-- Musik Latar -->
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const music = document.getElementById("bg-music");
+        const btn = document.getElementById("play-music");
+
+        btn.addEventListener("click", () => {
+            if (music.paused) {
+                music.play();
+                btn.textContent = "pencet🎵 ";
+            } else {
+                music.pause();
+                btn.textContent = "pencet🎵";
+            }
+        });
+    </script>
+
+    <!-- Musik Latar -->
+    <audio id="bg-music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Musik otomatis setelah user klik jika autoplay diblokir
+        document.addEventListener("click", () => {
+            const music = document.getElementById("bg-music");
+            if (music.paused) {
+                music.play();
+            }
+        });
+    </script>
+
+    <!-- Bagian Utama -->
+    <header>
+        <h1>Selamat Ulang Tahun, Beee ❤️</h1>
+        <p class="intro">
+            maaf bub kalo telat😔. hbd yaaaa bububbbb hehehehe. kamu udah 18 tahun ajaa tapii masih kayakk bocill.
+            semoga sehat terusssss biar kita bisa sama sama terusss, nambahh pinterrr, jangan lawan sama orang tua. kamu makin tahunn ternyata makin cantikkk banget tawuuu jadi makin sayang hehehehe.
+            ga percayaa?? ini foto2 kita dan foto kamu selama kita bersamaa 💕
+        </p>
+    </header>
+
+    <!-- Galeri Kenangan -->
+    <section class="gallery-section">
+        <h2>Kenangan Manis Kita 📸</h2>
+        <div class="gallery">
+            <div class="photo"><img src="foto1 (1).jpeg" alt="Foto 1"></div>
+            <div class="photo"><img src="foto1 (2).jpeg" alt="Foto 2"></div>
+            <div class="photo"><img src="foto1 (3).jpeg" alt="Foto 3"></div>
+            <div class="photo"><img src="foto1 (4).jpeg" alt="Foto 4"></div>
+        </div>
+    </section>
+
+    <!-- Kata-Kata Romantis -->
+    <section class="love-words">
+        <h2>Kata-Kata untukmu 🌹</h2>
+        <p>
+            Sayangkuu yangg cantiikkk,  
+            Terima kasih sudah selalu ada di sisiku, baik di saat aku tertawa maupun saat aku sedihh.  
+            kamu adalah alasan mengapa aku ingin menjadi lebih baik setiap harinya.  
+            Semoga ulang tahunmu penuh dengan kebahagiaan, cinta, dan semua hal indah yang pantas kau dapatkan.  
+            Aku berjanji, akan selalu menjagamu, mencintaimu, dan membuatmu tersenyum setiap harinya.  
+            Karena bagiku, melihatmu bahagia adalah hadiah terbesar dalam hidupku.  
+        </p>
+    </section>
+
+    <!-- Hadiah -->
+    <section class="gift-section">
+        <h2>Hadiah Spesial untukmu 🎁</h2>
+        <div class="gift-container">
+            <div class="gift">
+                <img src="buket.jpg" alt="Bunga">
+                <p>Buket bunga cantik, seperti dirimu 🌹</p>
+            </div>
+            <div class="gift">
+                <img src="cincin.jpg" alt="Perhiasan">
+                <p>cincin untuk kita nanti😁 ✨</p>
+            </div>
+            <div class="gift">
+                <img src="hadiah.jpg" alt="Coklat">
+                <p>Coklat manis, seperti cinta kita 🍫</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penutup -->
+    <footer>
+        <p>
+            Dengan sepenuh hati, aku ingin kau tahu:  
+            Aku mencintaimu hari ini, besok, dan selamanya ❤️  
+        </p>
+        <strong>- Dari aku, yang selalu mencintaimu -</strong>
+    </footer>
+</body>
+</html>
